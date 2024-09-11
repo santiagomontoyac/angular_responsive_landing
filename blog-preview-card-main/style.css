@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "FontFamily";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");    
+}
+
+body {
+  font-family: "FontFamily", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1c40f;
+}
+
+.card {
+  width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 1.9);
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  width: 100%;
+  max-width: 300px; 
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+.card-content {
+  padding: 20px;
+}
+
+.category-label {
+  background-color: rgb(232, 200, 73);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.publish-date {
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+.author:hover {
+  color: #3498db; /* Change text color on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
